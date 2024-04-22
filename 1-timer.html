@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/vendor-94c342ae.js"></script>
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-77e16229.js">
     <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-7a007824.css">
-    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-6999ff10.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-5e6a257f.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Home</a>
-      <h1>Welcome to Timer</h1>
+      <h1>Timer</h1>
     </section>
 
     <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <button type="button" class="btn-timer" data-start>Start</button>
 
     <div class="timer">
       <div class="field">
