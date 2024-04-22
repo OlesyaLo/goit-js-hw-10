@@ -10,8 +10,32 @@
   <body>
     <section>
       <a href="./index.html">Home</a>
-      <h1>Welcome to Snackbar</h1>
+      <h1>Snackbar</h1>
     </section>
+
+    <form class="form">
+      <label class="delay-form">
+        Delay (ms)
+        <input class="delay-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="state-field">
+        <legend>State</legend>
+        <div class="state-container">
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </div>
+      </fieldset>
+
+      <button class="btn-snackbar" type="submit">Create notification</button>
+    </form>
+
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>

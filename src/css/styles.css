@@ -82,7 +82,7 @@ h1 {
   color: #7b7a7a;
 }
 
-input#datetime-picker {
+#datetime-picker {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 272px;
@@ -95,7 +95,56 @@ input#datetime-picker {
   background-color: #fff;
 }
 
-input#datetime-picker.btn-timer:disabled {
+#datetime-picker:disabled {
   background-color: #cfcfcf;
   color: #7b7a7a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.delay-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.delay-input {
+  height: 40px;
+  border: 2px solid #808080;
+  border-radius: 3px;
+}
+
+.state-field {
+  height: 50px;
+  border-style: none;
+  border: 2px solid #808080;
+  border-radius: 3px;
+
+  margin: 8px 0 10px 0;
+}
+
+legend {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.state-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+.btn-snackbar {
+  height: 30px;
+  border: 0;
+  background-color: #cfcfcf;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  font-size: 15px;
 }
